@@ -3,7 +3,19 @@ body {
     font-weight: 700;
     color: rgb(85, 81, 81);
 }
-.carousel {
+header {
+    background-image: url("images/cover-Sm.jpeg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    color:#fff;
+    opacity: .75;
+}
+.logo {
+    width: 175px;
+    margin: 15px;
+}
+/* .carousel {
     width: 60%;
     height: 40%;
     margin-left: 20%;
@@ -14,20 +26,101 @@ body {
     border: 3px solid rgb(91, 83, 83);
     border-radius: 0 20px;
     background-color: rgb(245, 241, 241);
-}
-h4 {
+} */
+/* h4 {
     padding-top: 25px;
 }
 .carousel-background {
     background-color:rgb(170, 139, 149);
+} */
+.search-bar {
+    height: 40vh;
 }
+.background {
+    background-color: rgb(224, 219, 219);
+    height: 40%;
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 0 100px 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+.car-background {
+    height: 500px;
+    background-color: rgb(11, 60, 42);
+    display: flex;
+    justify-content: center;
+}
+.carousel-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+  }
+  
+  .carousel-main {
+    display: flex;
+    transition: transform 0.5s;
+  }
+  
+  .item-carousel {
+    flex: 1 0 95%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(251, 250, 246);
+    border: 2px solid black;
+    border-radius: 10px;
+  }
+  .svg {
+    width: 50%;
+  }
+  .slider-text {
+    text-align: center;
+    width: 50%;
+    padding-top: 50px;
+  }
+  
+  .carousel-navigation {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .arrow {
+    cursor: pointer;
+    font-size: 24px;
+    padding: 5px;
+  }
+  
+  @media (min-width: 768px) {
+    .item-carousel{
+      flex: 1 0 50%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .item-carousel {
+      flex: 1 0 33.33%;
+    }
+  }
 
 @media screen and (min-width: 768px) {
-    .carousel {
+    header {
+        background-image: url("images/cover-Lg.jpeg");
+        height: 500px;
+    }
+    /* .carousel {
         width: 30%;
         height: 40%;
         margin-left: 35%;
-    }
+    } */
 }
 
 @media screen and (min-width: 1024px) {

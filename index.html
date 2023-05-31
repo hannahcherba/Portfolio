@@ -4,15 +4,31 @@
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   </head>
   <body>
-    <h1>CherbaWeb Developement</h1>
+    <header class="container-fluid text-center">
+      <img class="logo" src="images/svgs/logo-white.svg" alt="Hannah's logo">
+      <h1 class="display-1" >CherbaWeb Developement</h1>
+      <h3>Making your dreams reality</h3>
+    </header>
 
-    <div class="carousel-background">
+    <section class="search-bar">
+      <div class="background">
+        <nav class="navbar">
+          <div class="container-fluid">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </nav>
+      </div>
+    </section>
+
+    <!-- <div class="carousel-background">
       <div id="carouselExample" class="carousel slide">
 
         <div class="carousel-inner">
@@ -64,10 +80,70 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
+    </div> -->
+<div class="car-background">
+  <div class="carousel-cont">
+    <div class="carousel-main">
+      <div class="item-carousel">
+        <img class="game svg" src="images/svgs/Game3-SVG.svg" alt="A game svg image.">
+        <div class="slider-text">
+            <h4>Guessing Game</h4>
+            <p>The player has five hearts to risk in order to guess the phrase.</p>    
+        </div>
+      </div>
+
+      <div class="item-carousel">
+        <img class="form svg" src="images/svgs/form-new-SVG.svg" alt="A form svg image.">
+        <div class="slider-text">
+            <h4>A Form</h4>
+            <p>An interactive form with drop-down menus and buttons for interactivity.</p>    
+        </div>
+      </div>
+
+      <div class="item-carousel">
+        <img class="gallery svg" src="images/svgs/Photo-gallery-simple.svg" alt="A gallery svg image.">
+            <div class="slider-text">
+                <h4>Photo Gallery</h4>
+                <p>A gallery of twelve pictures, that when clicked, reveal a hidden overlay.</p>    
+            </div>
+      </div>
+
+      <div class="item-carousel">
+        <img class="dashboard svg" src="images/svgs/Dashboard-SVG.svg" alt="A dashboard svg image.">
+        <div class="slider-text">
+            <h4>Dashboard</h4>
+            <p>A dashboard with user information, svg graphics on the navigation, and changing data graphs. </p>    
+        </div>
+      </div>
+
+      <div class="item-carousel">
+        <img class="responsive svg" src="images/svgs/Responsive-design-SVG.svg" alt="A website svg image.">
+            <div class="slider-text">
+                <h4>Responsive Design</h4>
+                <p>A responsive design that adapts to desktop, tablet and phone screens. </p>    
+            </div>
+      </div>
+
+      <div class="item-carousel">
+        <img class="user svg" src="images/svgs/Random-user-SVG.svg" alt="A user svg image.">
+        <div class="slider-text">
+            <h4>Employee Directory</h4>
+            <p>A random employee directory, with mock employees taken from an API of randomly selected users.</p>   
+        </div>
+      </div>
+
+      <!-- Add more divs as needed -->
     </div>
+    <div class="carousel-navigation">
+      <div class="arrow left">&lt;</div>
+      <div class="arrow right">&gt;</div>
+    </div>
+  </div>
 
-   
+ 
 
+</div>
+    
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
