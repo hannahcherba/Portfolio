@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Created with Vectornator (http://vectornator.io/) -->
+<svg height="100%" stroke-miterlimit="10" style="fill-rule:nonzero;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;" version="1.1" viewBox="0 0 1024 1024" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:vectornator="http://vectornator.io" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs/>
+<path d="M0 0L1024 0L1024 1024L0 1024L0 0Z" fill="#9d521b" fill-opacity="0" fill-rule="nonzero" opacity="1" stroke="none"/>
+<g id="Layer-1" vectornator:layerName="Layer 1">
+<path d="M271.78 119.338L272.971 897.032L271.78 119.338Z" fill="none" opacity="1" stroke="#645c5c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="21.6789"/>
+<path d="M271.031 125.728L687.008 902.386L691.18 121.586" fill="none" opacity="1" stroke="#645c5c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="21.6789"/>
+<path d="M272.359 497.32L689.898 495.275" fill="none" opacity="1" stroke="#645c5c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="21.6789"/>
+<path d="M482.748 136.942L272.971 897.032L482.748 136.942Z" fill="none" opacity="1" stroke="#645c5c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="21.6789"/>
+<path d="M690.781 912.58L482.748 136.942" fill="none" opacity="1" stroke="#645c5c" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="21.6789"/>
+</g>
+<g id="Layer-4" vectornator:layerName="Layer 4">
+<path d="M497.642 3.97138C491.552 3.7962 485.434 3.80197 479.282 4.00274C265.238 10.9873 95.3073 245.279 100.503 526.319C105.698 807.358 284.071 1030.28 498.114 1023.3C590.579 1020.28 674.614 974.584 740.014 901.265C739.614 896.431 739.332 891.365 739.141 886.183C737.459 871.878 736.259 858.392 735.766 845.923C674.003 925.423 590.399 975.956 497.288 978.995C301.844 985.372 139.017 781.797 134.274 525.221C129.531 268.645 284.64 54.6853 480.084 48.3077C582.334 44.9712 675.375 99.3983 741.689 188.591C741.801 184.296 741.871 180.104 742.067 175.422C741.629 163.511 741.526 151.31 741.855 137.608C741.7 134.078 741.562 130.494 741.383 127.041C675.392 52.5627 590.375 6.63883 497.642 3.97138Z" fill="#645c5c" fill-rule="nonzero" opacity="1" stroke="#453d3d" stroke-linecap="butt" stroke-linejoin="miter" stroke-width="0.00110947"/>
+</g>
+<g id="Layer-2" vectornator:layerName="Layer 2"/>
+</svg>
