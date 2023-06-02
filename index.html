@@ -7,7 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="swiper-raw-code/swiper-bundle.min.css">
   </head>
+
+  <!-- ============================================================================================
+Awesome swiper js tutorial from
+ https://www.youtube.com/watch?v=qOO6lVMhmGc&list=PLxRbPnhFKaf3svAUgiwwWZY2lsPICJQaz&index=6 
+ for html, css and js setup
+============================================================================================ -->
+
   <body>
     <header class="container-fluid text-center">
       <img class="logo" src="images/svgs/logo-white.svg" alt="Hannah's logo">
@@ -19,8 +27,8 @@
       <div class="background">
         <nav class="navbar">
           <div class="container-fluid">
-            <form class="d-flex" role="search">
-              <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+            <form class="d-flex search" role="search">
+              <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
           </div>
@@ -28,122 +36,106 @@
       </div>
     </section>
 
-    <!-- <div class="carousel-background">
-      <div id="carouselExample" class="carousel slide">
-
-        <div class="carousel-inner">
-
-          <div class="carousel-item active">
-            <img src="images/svgs/Game3-SVG .svg" class="d-block w-100" alt="...">
-            <h4>Guessing Game</h4>
-            <p>The player has five hearts to risk in order to guess the phrase.</p>    
+    <div class="slider-background">
+      <div class="slide-container swiper">
+          <div class="slide-content">
+              <div class="card-wrapper swiper-wrapper">
+  
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-image">
+                              <img class="card-img" src="images/svgs/Game3-SVG.svg" alt="Project svg image.">
+                          </div>
+                      </div>
+                      <div class="card-content">
+                          <h2 class="name">Guessing Game</h2>
+                          <p class="Description">The player has five hearts to risk in order to guess the phrase.</p>
+  
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+  
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-image">
+                              <img class="card-img" src="images/svgs/form-new-SVG.svg" alt="Project svg image.">
+                          </div>
+                      </div>
+                      <div class="card-content">
+                          <h2 class="name">A Form</h2>
+                          <p class="Description">An interactive form with drop-down menus and buttons for interactivity.</p>
+  
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-image">
+                              <img class="card-img" src="images/svgs/Photo-gallery-simple.svg" alt="Project svg image.">
+                          </div>
+                      </div>
+                      <div class="card-content">
+                          <h2 class="name">Photo Gallery</h2>
+                          <p class="Description">A gallery of twelve pictures, that when clicked, reveal a hidden overlay.</p>
+  
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-image">
+                              <img class="card-img" src="images/svgs/Dashboard-SVG.svg" alt="Project svg image.">
+                          </div>
+                      </div>
+                      <div class="card-content">
+                          <h2 class="name">Dashboard</h2>
+                          <p class="Description">A dashboard with user information, svg graphics on the navigation, and graphs.</p>
+  
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-image">
+                              <img class="card-img" src="images/svgs/Random-user-SVG.svg" alt="Project svg image.">
+                          </div>
+                      </div>
+                      <div class="card-content">
+                          <h2 class="name">Employee Directory</h2>
+                          <p class="Description">A directory, with employee data taken from an API of randomly selected users.</p>
+  
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+                  <div class="card swiper-slide">
+                      <div class="image-content">
+                          <span class="overlay"></span>
+                          <div class="card-image">
+                              <img class="card-img" src="images/svgs/Responsive-design-SVG.svg" alt="Project svg image.">
+                          </div>
+                      </div>
+                      <div class="card-content">
+                          <h2 class="name">Responsive Design</h2>
+                          <p class="Description">A responsive design that adapts to desktop, tablet and phone screens.</p>
+  
+                          <button class="button">View More</button>
+                      </div>
+                  </div>
+              </div>
           </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
 
-          <div class="carousel-item">
-            <img src="images/svgs/form-new-SVG.svg" class="d-block w-100" alt="...">
-            <h4>A Form</h4>
-            <p>An interactive form with drop-down menus and buttons for interactivity.</p>    
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/svgs/Photo-gallery-simple.svg" class="d-block w-100" alt="...">
-            <h4>Photo Gallery</h4>
-            <p>A gallery of twelve pictures, that when clicked, reveal a hidden overlay.</p>    
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/svgs/Dashboard-SVG.svg" class="d-block w-100" alt="...">
-            <h4>Dashboard</h4>
-            <p>A dashboard with user information, svg graphics on the navigation, and changing data graphs. </p>    
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/svgs/Random-user-SVG.svg" class="d-block w-100" alt="...">
-            <h4>Employee Directory</h4>
-            <p>A random employee directory, with mock employees taken from an API of randomly selected users.</p>   
-          </div>
-
-          <div class="carousel-item">
-            <img src="images/svgs/Responsive-design-SVG.svg" class="d-block w-100" alt="...">
-            <h4>Responsive Design</h4>
-            <p>A responsive design that adapts to desktop, tablet and phone screens. </p>    
-          </div>
-          
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    </div> -->
-<div class="car-background">
-  <div class="carousel-cont">
-    <div class="carousel-main">
-      <div class="item-carousel">
-        <img class="game svg" src="images/svgs/Game3-SVG.svg" alt="A game svg image.">
-        <div class="slider-text">
-            <h4>Guessing Game</h4>
-            <p>The player has five hearts to risk in order to guess the phrase.</p>    
-        </div>
-      </div>
-
-      <div class="item-carousel">
-        <img class="form svg" src="images/svgs/form-new-SVG.svg" alt="A form svg image.">
-        <div class="slider-text">
-            <h4>A Form</h4>
-            <p>An interactive form with drop-down menus and buttons for interactivity.</p>    
-        </div>
-      </div>
-
-      <div class="item-carousel">
-        <img class="gallery svg" src="images/svgs/Photo-gallery-simple.svg" alt="A gallery svg image.">
-            <div class="slider-text">
-                <h4>Photo Gallery</h4>
-                <p>A gallery of twelve pictures, that when clicked, reveal a hidden overlay.</p>    
-            </div>
-      </div>
-
-      <div class="item-carousel">
-        <img class="dashboard svg" src="images/svgs/Dashboard-SVG.svg" alt="A dashboard svg image.">
-        <div class="slider-text">
-            <h4>Dashboard</h4>
-            <p>A dashboard with user information, svg graphics on the navigation, and changing data graphs. </p>    
-        </div>
-      </div>
-
-      <div class="item-carousel">
-        <img class="responsive svg" src="images/svgs/Responsive-design-SVG.svg" alt="A website svg image.">
-            <div class="slider-text">
-                <h4>Responsive Design</h4>
-                <p>A responsive design that adapts to desktop, tablet and phone screens. </p>    
-            </div>
-      </div>
-
-      <div class="item-carousel">
-        <img class="user svg" src="images/svgs/Random-user-SVG.svg" alt="A user svg image.">
-        <div class="slider-text">
-            <h4>Employee Directory</h4>
-            <p>A random employee directory, with mock employees taken from an API of randomly selected users.</p>   
-        </div>
-      </div>
-
-      <!-- Add more divs as needed -->
     </div>
-    <div class="carousel-navigation">
-      <div class="arrow left">&lt;</div>
-      <div class="arrow right">&gt;</div>
-    </div>
-  </div>
-
  
-
-</div>
-    
+    <script src="swiper-raw-code/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
