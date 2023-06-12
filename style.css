@@ -24,12 +24,14 @@ Header
 =================== */
 
 header {
-    background-image: url("images/cover-Sm.jpeg");
+    background-image: url("images/cover-sm-op.png");
     background-repeat: no-repeat;
     height: 500px;
     background-size: cover;
-    color:#fff;
-    opacity: .75;
+    color: #635959;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
 }
 .logo {
     width: 175px;
@@ -37,22 +39,108 @@ header {
 }
 
 /* ===================
-Search
+Search-select and Text Block
 =================== */
-.search-bar {
+.search-bar, .txt-background {
     height: 20vh;
     width: 100%;
     background-color: #f8f5f0;
 }
-.search-background {
-    background-color:#D6BCAE;
+.txt-background{
+   display: flex;
+   justify-content: right;
+}
+.search-background, .txt-bg-color{
     height: 75%;
     width: 80%;
     margin-top: 30px;
-    border-radius: 0 100px 100px 0px;
     display: flex;
     justify-content: center;
 }
+.search-background {
+    background-color:#D6BCAE;
+    border-radius: 0 100px 100px 0px;
+}
+.txt-bg-color{
+    background-color: #b7c8ed;
+    border-radius: 100px 0px 0px 100px;
+    color: white;
+}
+.txt-bg-color h3 {
+    width: 85%;
+    align-self: center;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.search-div{
+    align-self: center;
+    width: 60%;
+}
+select{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border:  solid 1px rgb(214, 209, 209);
+    font-family: 'Varela Round', sans-serif;
+    font-size: 15px;
+    height: 50px;
+    width:100%;
+}
+select::placeholder{
+    color:rgb(167, 164, 164);
+}
+.select-container select {
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    appearance: none;
+    padding: 5px;
+    text-indent: 10px;
+    border: none;
+  }
+  
+.select-container {
+    background: url("images/svgs/Arrow.svg") no-repeat right #ffffff;
+    background-size: 40px;
+    border:  solid 1px rgb(214, 209, 209);
+    background-color:rgb(245, 245, 247);
+    border-radius: 7px;
+    width: 80%;
+    height: 50px;
+    overflow: hidden;
+    align-self: center;
+}
+/* .search-div.active .result-box {
+    padding: 10px 8px;
+    opacity: 1;
+    pointer-events: auto;
+} */
+/* .result-box ul {
+    /* display: none; */
+    /* max-height: 100px;
+    overflow-y: scroll;
+    list-style: none;
+    padding: 0px 5px 5px 5px;
+    margin-top: 0;
+    position:absolute;
+    background-color: white;
+    border-radius: 7px;
+}
+.result-box ul li  {
+    padding:15px;
+    font-size: 15px;
+    border-radius: 7px;
+}
+.result-box a {
+    text-decoration: none;
+    color: rgb(85, 81, 81);
+}
+.result-box a:hover {
+    text-decoration: underline;
+} */ 
+
+
+
 /* ===================
 Slider
 =================== */
@@ -166,6 +254,10 @@ p.description {
     cursor: pointer;
     transition: all .3s ease;
 }
+.button a {
+    text-decoration: none;
+    color: #fff;
+}
 .button:hover, .btn-more:hover {
     background-color: #c36628;
 }
@@ -229,17 +321,25 @@ Mini About Section
 .mini-about-content p {
     width: 80%;
     align-self: center;
+    font-size: 12px;
 }
-.mini-about-content h3 {
+.mini-about-content h4 {
     padding-top: 15px;
+    font-size: 15px;
+    width: 90%;
+    align-self: center;
 }
 .btn-more{
     position: absolute;
     bottom: 0;
     width: 50%;
     align-self: center;
-   
 }
+.btn-more a{
+    text-decoration: none;
+    color: white;
+}
+
 /* ===================
 Footer
 =================== */
@@ -292,12 +392,178 @@ footer h4 {
 }
 
 /* ===================
+About Page
+=================== */
+
+.about-bio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #EAE2D9;
+}
+.bio-img img {
+    width: 100%;
+    border-radius: 300px 300px 0px 0px
+}
+.bio-txt, .bio-img {
+    width: 60%;
+    text-align: center;
+    margin: 20px;
+}
+.bio-txt {
+    border-radius: 35px 0px;
+    background-color:#c68549;;
+    padding: 20px;
+    color: #fff;
+    width: 80%;
+}
+.bio-txt ul {
+    text-align: left;
+}
+.bio-txt ul a {
+    color:white;
+}
+/* ===================
+Contact Page
+=================== */
+
+form {
+    background-color: #eceff4;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-info{
+    width: 80%;
+    margin: 30px;
+    padding: 15px;
+    background-color:#D6BCAE;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-div {
+    align-self: center;
+}
+.form-desc{
+    color: white;
+    text-align: center;
+}
+.social-sec{
+    padding: 20px;
+    background-color: #c68549;
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.social-links a img {
+    width: 75px;
+    padding: 10px;
+    margin: 10px;
+    background-color:#d7ddec;
+    border-radius: 25px;
+    align-self: center;
+}
+
+/* Contact Page Modal */
+
+/* =========================
+Overlay
+===========================*/
+div.hidden {
+    display: none;
+}
+div.overlay-parent {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+.overlay-contact {
+    position: absolute;
+    z-index: 2;
+    width: 60%;
+    height: fit-content;
+    top: 10%;
+    left: 20%;
+    background-color: #fff;
+    border-radius: 7px 40px;
+    border: 2px solid rgb(165 173 238);
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.avatar {
+    width: 200px;
+    border-radius: 50%;
+    padding: 20px;
+
+}
+.modal-content {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+#modal-close {
+    padding-left: 78%;
+    margin-top: 10px;
+    font-size: 18px;
+    color:rgb(85, 82, 82);
+    transition: all .5s cubic-bezier(.62,-0.19,.25,1.3);
+    border: none;
+    background-color: #fff;
+}
+#modal-close:hover {
+   font-size: 21px;
+   color:rgb(165, 161, 161);
+   cursor: pointer;
+}
+.overlay-txt {
+   width: 80%;
+}
+.overlay-txt div {
+    border-bottom: 1.5px solid rgb(221, 220, 220);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.overlay-txt p, .overlay-txt h2 {
+    margin: 8px;
+    text-align: center;
+}
+.overlay-txt p{
+    font-size: 10px;
+}
+.overlay-txt h2{
+    font-size: 19px;
+}
+
+/* ===================
 Media Queries
 =================== */
 
 @media screen and (min-width: 386px){
     .mini-about{
         padding-top: 200px;
+    }
+    .social-links {
+        width: 40%;
     }
 }
 
@@ -312,15 +578,16 @@ Media Queries
 
 @media screen and (min-width: 768px) {
     header {
-        background-image: url("images/cover-Lg.jpeg");
+        background-image: url("images/cover-lg-op.png");
         height: 500px;
+    }
+    .txt-bg-color h3 {
+        width: 60%;
+        font-size: 25px;
     }
     .mini-about{
         flex-direction: row;
         align-items:initial;
-    }
-    .mini-about img {
-        margin-right: 5%;
     }
     .mini-img-content{
         margin-right: 5%;
@@ -328,11 +595,19 @@ Media Queries
         width: 35%;
     }
     .mini-about-content p {
-        font-size: 13px;
+        font-size: 11px;
     }
     .mini-about-content{
         width: 35%;
         height: initial;
+    }
+    .about-bio{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    .bio-txt, .bio-img {
+        width: 40%;
     }
     .contact, .social, .location {
         width: 33%;
@@ -362,15 +637,60 @@ Media Queries
     .social ul li:hover {
         text-decoration: underline;
     }
+    .form-info {
+        width: 50%;
+    }
+    .modal-close {
+        padding-left: 88%;
+    }
+    .overlay-contact{
+        width: 45%;
+        top: 12%;
+        left: 25%;
+    }
+    .overlay-contact .avatar {
+        width: 200px;
+    }
+    .overlay-txt {
+        width: 70%;
+     }
+    .overlay-txt p{
+        font-size: 17px;
+    }
+    .overlay-txt h2{
+        font-size: 22px;
+    }
 }
 @media screen and (min-width: 1024px) {
+    .select-container{
+        width: 60%;
+    }
     .mini-about-content p {
         font-size: 18px;
+    }
+    .mini-about-content h4 {
+        font-size: 20px;
     }
     .social ul {
         flex-direction: row;
     }
     .social ul li {
         padding: 8px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .mini-about-content h4 {
+        padding-top: 20px;
+        font-size: 28px;
+    }
+    .mini-about-content p {
+        font-size: 22px;
+        margin-top: 5%;
+    }
+    .overlay-contact{
+        width: 30%;
+        left: 35%;
     }
 }

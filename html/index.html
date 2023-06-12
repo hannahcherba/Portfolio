@@ -4,10 +4,10 @@
     <title>Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="swiper-raw-code/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../swiper-raw-code/swiper-bundle.min.css">
   </head>
 
   <!-- ============================================================================================
@@ -25,33 +25,48 @@ Awesome swiper js tutorial from
                   <a class="nav-link active text-black" aria-current="page" href="#">HOME</a>
                 </li>
                 <li class="nav-item h4">
-                  <a class="nav-link h4 text-black" href="#">ABOUT</a>
+                  <a class="nav-link h4 text-black" href="about.html">ABOUT</a>
                 </li>
                 <li class="nav-item h4">
-                  <a class="nav-link text-black" href="#">CONTACT</a>
+                  <a class="nav-link text-black" href="contact.html">CONTACT</a>
                 </li>
               </ul>
         </nav>
 
-      <img class="logo" src="images/svgs/logo-white.svg" alt="Hannah's logo">
+      <img class="logo" src="../images/svgs/logo.svg" alt="Hannah's logo">
       <h1 class="display-1" >CherbaWeb Developement</h1>
-      <h3>Making your dreams reality</h3>
+      <h3>Crafting exquisite websites for a digital world</h3>
     </header>
 
     <section class="search-bar">
       <div class="search-background">
-        <nav class="navbar">
-          <div class="container-fluid">
-            <form class="d-flex search" role="search">
-              <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </nav>
+        <div class="select-container">
+
+            <select onChange="window.location.href=this.value" required class="form-field" id="timezone" name="user_time">
+                <option id="default-option" class ="timezone-select" value="" selected disabled>Browse by Topic...</option>
+                <option value="#examples">Project Examples</option>
+                <option value="#mini-about">Why CherbaWeb developement?</option>
+                <option value="contact.html">Contact Info</option>
+                <option value="#dashboard">Dashboard Project</option>
+                <option value="#conference-svg">SVG Example</option>
+                <option value="#responsive">Responsive Design Example</option>
+                <option value="#form">Form Example Project</option>
+                <option value="#game">Game Project</option>
+                <option value="#photo-gallery">Photo Gallery Project</option>
+                <option value="#directory">Random User Directory Project</option>
+            </select>
+
+         </div>  
       </div>
     </section>
 
-    <div class="slider-background">
+    <div class="txt-background">
+        <div class="txt-bg-color">
+            <h3>Success starts with a dynamic website. No-one knows what you have to offer unless you put it out there.</h3>
+        </div>
+    </div>
+
+    <div id="examples" class="slider-background">
         <div class="background-text">
             <h2 class="slider-main-text">Examples of what I can do for you</h2>
             <p class="slider-main-p">Browse through my projects and click the buttons to interact with each one</p>
@@ -61,93 +76,114 @@ Awesome swiper js tutorial from
           <div class="slide-content">
               <div class="card-wrapper swiper-wrapper">
   
-                  <div class="card swiper-slide">
+                  <div id="game" class="card swiper-slide">
                       <div class="image-content">
                           <span class="overlay"></span>
                           <div class="card-image">
-                              <img class="card-img" src="images/svgs/Game3-SVG.svg" alt="Project svg image.">
+                              <img class="card-img" src="../images/svgs/Game3-SVG.svg" alt="Project svg image.">
                           </div>
                       </div>
                       <div class="card-content">
                           <h2 class="name">Guessing Game</h2>
                           <p class="Description">The player has five hearts to risk in order to guess the phrase.</p>
   
-                          <button class="button">View Project</button>
+                          <button class="button"><a target="_blank" href="#">View Project</a></button>
                       </div>
                   </div>
   
-                  <div class="card swiper-slide">
+                  <div id="form" class="card swiper-slide">
                       <div class="image-content">
                           <span class="overlay"></span>
                           <div class="card-image">
-                              <img class="card-img" src="images/svgs/form-new-SVG.svg" alt="Project svg image.">
+                              <img class="card-img" src="../images/svgs/form-new-SVG.svg" alt="Project svg image.">
                           </div>
                       </div>
                       <div class="card-content">
                           <h2 class="name">A Form</h2>
                           <p class="Description">An interactive form with drop-down menus and buttons for interactivity.</p>
   
-                          <button class="button">View Project</button>
+                          <button class="button"><a target="_blank" href="#">View Project</a></button>
                       </div>
                   </div>
-                  <div class="card swiper-slide">
+
+                  <div id="photo-gallery" class="card swiper-slide">
                       <div class="image-content">
                           <span class="overlay"></span>
                           <div class="card-image">
-                              <img class="card-img" src="images/svgs/Photo-gallery-simple.svg" alt="Project svg image.">
+                              <img class="card-img" src="../images/svgs/Photo-gallery-simple.svg" alt="Project svg image.">
                           </div>
                       </div>
                       <div class="card-content">
                           <h2 class="name">Photo Gallery</h2>
                           <p class="Description">A gallery of images, that when clicked, reveal a hidden overlay.</p>
   
-                          <button class="button">View Project</button>
+                          <button class="button"><a target="_blank" href="#">View Project</a></button>
                       </div>
                   </div>
-                  <div class="card swiper-slide">
+
+                  <div id="dashboard" class="card swiper-slide">
                       <div class="image-content">
                           <span class="overlay"></span>
                           <div class="card-image">
-                              <img class="card-img" src="images/svgs/Dashboard-SVG.svg" alt="Project svg image.">
+                              <img class="card-img" src="../images/svgs/Dashboard-SVG.svg" alt="Project svg image.">
                           </div>
                       </div>
                       <div class="card-content">
                           <h2 class="name">Dashboard</h2>
                           <p class="Description">A dashboard with user data, svg graphics on the nav bar, and graphs.</p>
   
-                          <button class="button">View Project</button>
+                          <button class="button"><a target="_blank" href="#">View Project</a></button>
                       </div>
                   </div>
-                  <div class="card swiper-slide">
+
+                  <div id="directory" class="card swiper-slide">
                       <div class="image-content">
                           <span class="overlay"></span>
                           <div class="card-image">
-                              <img class="card-img" src="images/svgs/Random-user-SVG.svg" alt="Project svg image.">
+                              <img class="card-img" src="../images/svgs/Random-user-SVG.svg" alt="Project svg image.">
                           </div>
                       </div>
                       <div class="card-content">
                           <h2 class="name">Employee Directory</h2>
                           <p class="Description">A directory with employee data from an API of random users.</p>
   
-                          <button class="button">View Project</button>
+                          <button class="button"><a target="_blank" href="#">View Project</a></button>
                       </div>
                   </div>
-                  <div class="card swiper-slide">
+
+                  <div id="responsive" class="card swiper-slide">
                       <div class="image-content">
                           <span class="overlay"></span>
                           <div class="card-image">
-                              <img class="card-img" src="images/svgs/Responsive-design-SVG.svg" alt="Project svg image.">
+                              <img class="card-img" src="../images/svgs/Responsive-design-SVG.svg" alt="Project svg image.">
                           </div>
                       </div>
                       <div class="card-content">
                           <h2 class="name">Responsive Design</h2>
                           <p class="Description">A responsive design that adapts to desktop, tablet and phone screens.</p>
   
-                          <button class="button">View Project</button>
+                          <button class="button"><a target="_blank" href="#">View Project</a></button>
                       </div>
                   </div>
+
+                  <div id="conference-svg" class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+                        <div class="card-image">
+                            <img class="card-img" src="../images/svgs/Conference-SVG.jpeg" alt="Project svg image.">
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">Conference SVGs</h2>
+                        <p class="Description">Floral wreath svgs, created through Adobe Illustrator for a conference.</p>
+
+                        <button class="button"><a target="_blank" href="https://www.sgbcvenice.org/sgbc-conferences/series/2022-womens-annual-conference-serving-the-saints">View Project</a></button>
+                    </div>
+                </div>
+
               </div>
           </div>
+
           <div class="swiper-button-next swiper-navBtn"></div>
           <div class="swiper-button-prev swiper-navBtn"></div>
           <div class="swiper-pagination"></div>
@@ -155,31 +191,33 @@ Awesome swiper js tutorial from
       </div>
     </div>
  
-    <section class="mini-about">
+    <section id="mini-about" class="mini-about">
         <div class="mini-img-content">
-            <img src="images/partialFace2.jpeg" alt="An image of Hannah on the computer">
+            <img src="../images/partialFace2.jpeg" alt="An image of Hannah on the computer">
         </div>
         <div class="mini-about-content">
-            <h3>About Me</h3>
-            <p>This is filler text.This is filler text.This is filler text.This is filler text.This is filler text.This is filler text.</p>
-            <button class="btn-more">Read More</button>
+            <h4>Digtal Transformation Starts Here</h4>
+            <p>Unleash your online potential with cutting-edge web solutions.
+                 Let me help you bring your vision to life and propel your business to new heights in 
+                 the digital landscape.</p>
+            <button class="btn-more"><a href="about.html">Read More</a></button>
         </div>
     </section>
 
     <footer class="footer">
         <div class="location">
-            <img src="images/svgs/Location.svg" alt="A map pinpoint svg">
+            <img src="../images/svgs/Location.svg" alt="A map pinpoint svg">
             <h4>Located In</h4>
             <p>Working remotely from the sunny Pacific West Coast.</p>
         </div>
         <div class="contact">
-            <img src="images/svgs/Contact.svg" alt="A letter svg">
-            <h4><a href="#">Contact Me</a></h4>
+            <img src="../images/svgs/Contact.svg" alt="A letter svg">
+            <h4><a href="contact.html">Contact Me</a></h4>
             <p>Click the link above to go to my contact page.</p>
         </div>
         <div class="social">
-            <img src="images/svgs/Heart.svg" alt="A heart svg">
-            <h4><a href="#">Find Me</a></h4>
+            <img src="../images/svgs/Heart.svg" alt="A heart svg">
+            <h4><a href="about.html">Find Me</a></h4>
             <ul>
                 <li><a target="_blank" href="https://www.linkedin.com/in/hannah-cherba-8b0686266/">LinkedIn</a></li>
                 <li><a target="_blank" href="https://www.instagram.com/hannie_marie_95/">Instagram</a></li>
@@ -189,8 +227,8 @@ Awesome swiper js tutorial from
     </footer>
 
 
-    <script src="swiper-raw-code/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
+    <script src="../swiper-raw-code/swiper-bundle.min.js"></script>
+    <script src="../js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
