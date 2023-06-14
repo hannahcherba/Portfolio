@@ -109,37 +109,11 @@ select::placeholder{
     height: 50px;
     overflow: hidden;
     align-self: center;
+    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55 ); 
 }
-/* .search-div.active .result-box {
-    padding: 10px 8px;
-    opacity: 1;
-    pointer-events: auto;
-} */
-/* .result-box ul {
-    /* display: none; */
-    /* max-height: 100px;
-    overflow-y: scroll;
-    list-style: none;
-    padding: 0px 5px 5px 5px;
-    margin-top: 0;
-    position:absolute;
-    background-color: white;
-    border-radius: 7px;
+.select-container:hover{
+    transform: scale(1.2);
 }
-.result-box ul li  {
-    padding:15px;
-    font-size: 15px;
-    border-radius: 7px;
-}
-.result-box a {
-    text-decoration: none;
-    color: rgb(85, 81, 81);
-}
-.result-box a:hover {
-    text-decoration: underline;
-} */ 
-
-
 
 /* ===================
 Slider
@@ -222,6 +196,7 @@ Slider
     border-radius: 5px;
     background: #2F5056;
     padding: 3px;
+    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55 ); 
 }
 .card-image .card-img {
     height: 100%;
@@ -229,6 +204,9 @@ Slider
     object-fit: cover;
     border-radius: 5px;
     border: 4px solid #FFF;
+}
+.card-image:hover{
+    transform: scale(1.2);
 }
 .name {
     font-size: 18px;
@@ -252,7 +230,7 @@ p.description {
     border-radius: 6px;
     margin: 20px;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55 ); 
 }
 .button a {
     text-decoration: none;
@@ -260,6 +238,7 @@ p.description {
 }
 .button:hover, .btn-more:hover {
     background-color: #c36628;
+    transform: scale(1.2);
 }
 .swiper-navBtn{
     color: #c68549;
@@ -474,6 +453,10 @@ form {
     background-color:#d7ddec;
     border-radius: 25px;
     align-self: center;
+    transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55 ); 
+}
+.social-links a img:hover {
+    transform: scale(1.2);
 }
 
 /* Contact Page Modal */
@@ -608,6 +591,12 @@ Media Queries
     }
     .bio-txt, .bio-img {
         width: 40%;
+    }
+    .bio-txt{
+        transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55 ); 
+    }
+    .bio-txt:hover{
+        transform: scale(1.2);
     }
     .contact, .social, .location {
         width: 33%;
