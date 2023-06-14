@@ -217,11 +217,11 @@ p.description {
     font-size: 14px;
     text-align: center;
 }
-.button {
+.card-content a {
     position: absolute;
     bottom: 0;
 }
-.button, .btn-more {
+.btn-more,  .card-content a{
     border: none;
     font-size: 16px;
     color: #fff;
@@ -232,11 +232,12 @@ p.description {
     cursor: pointer;
     transition: all 0.75s cubic-bezier(0.68, -0.55, 0.265, 1.55 ); 
 }
-.button a {
+.card-content a, .btn-more {
     text-decoration: none;
     color: #fff;
 }
-.button:hover, .btn-more:hover {
+
+.btn-more:hover, .card-content a:hover {
     background-color: #c36628;
     transform: scale(1.2);
 }

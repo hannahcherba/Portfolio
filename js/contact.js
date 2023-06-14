@@ -8,8 +8,8 @@ const modalClose = document.getElementById('modal-close');
 const submitBtn = document.getElementById('submit');
 const firstNameInput = document.getElementById('first-name');
 const lastNameInput = document.getElementById('last-name');
-const emailInput = document.getElementById('user-email');
-const msgField = document.getElementById('msg-field');
+const emailInput = document.getElementById('floatingInputGrid');
+const msgField = document.getElementById('exampleFormControlTextarea1');
 const cancelBtn = document.getElementById('cancel');
 
 
